@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    line-height: 1;
+    background-color: rgb(82, 146, 230);
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    display: flex;
+    
+}
+
+.panel-pricing-table{
+    background: white;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px 5px 10px 10px;
+}
+
+.pricing-features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.pricing-features-item{
+    color: rgb(71, 156, 226);
+    font-size: 0.6em;
+    padding: 5px 0 5px;
+    border-top: solid 1px rgb(185, 184, 184);
+    width: 80%;
+}
+
+.pricing-features-item:last-child{
+    border-bottom: solid 1px rgb(185, 184, 184);
+}
+
+.pricing-plan{
+    text-align: center;
+}
+
+.pricing-header{
+    margin: 10px 0 30px;
+    font-size: 13px;
+    color:  rgb(83, 82, 82); 
+}
+
+.pricing-img{
+    width: 220px;
+    height: 130px;
+}
+
+.pricing-price{
+    display: block;
+    margin: 12px 0;
+    font-weight: bold;
+    color: rgb(56, 140, 250);
+}
+
+.pricing-button{
+    border: 1px solid rgb(71, 156, 226);
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(71, 156, 226);
+    font-size: 0.6em;
+    padding: 4px 10px;
+}
+
+.pricing-button-is-featured{
+    color:white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid rgb(71, 156, 226);
+    font-size: 12px;
+    padding: 4px 10px;
+    background-color: rgb(56, 140, 250);
+}
+
+@media (min-width: 500px){
+
+    .panel-pricing-table{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .pricing-plan{
+        width: 250px;
+        border-left: solid 1px rgb(185, 184, 184);
+        
+    }
+
+    .pricing-plan:first-child{
+        border-left: none;
+    }
+    
+
+    .pricing-features-item{
+    border-top: none;
+      display:flex;
+      justify-content: center;
+      text-align: center;
+      width: 150px; 
+      line-height: 13px;  
+      border-bottom: solid 1px rgb(185, 184, 184);
+      border-top: solid 1px rgb(185, 184, 184);
+}
+
+.pricing-features-item:last-child{
+    border-top: none;
+}
+
+.pricing-plan{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-img{
+    width: 200px;
+    height: 150px;
+
+}
+}
